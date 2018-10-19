@@ -1,0 +1,13 @@
+.\"	$NetBSD: install,v 1.1 2009/04/30 12:47:39 tsutsui Exp $
+.
+To install
+.Nx*M
+you will either have to boot
+.Pa netbsd-INSTALL
+from a CD-ROM or set up an
+.Tn NFS
+or
+.Tn TFTP
+server to boot it over the network.
+.
+.so ../common/sysinst

@@ -1,0 +1,10 @@
+#       $NetBSD$
+
+ioconf ld_ataraid
+
+include "conf/files"
+include "dev/ata/files.ata"
+
+pseudo-device ataraid
+
+ld* at ataraid? vendtype ? unit ?

@@ -1,0 +1,3 @@
+/*	$NetBSD: elf_machdep.h,v 1.1 2005/12/29 15:20:08 tsutsui Exp $	*/
+
+#include <mips/elf_machdep.h>

@@ -1,0 +1,16 @@
+# $NetBSD: login,v 1.4 2005/02/27 03:40:14 thorpej Exp $
+#
+# PAM configuration for the "cron" service
+#
+
+# auth
+auth		required	pam_rootok.so
+
+# account
+account		include		system
+
+# session
+session		include		system
+
+# password
+password	required	pam_deny.so

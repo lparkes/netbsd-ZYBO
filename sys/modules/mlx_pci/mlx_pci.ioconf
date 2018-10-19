@@ -1,0 +1,10 @@
+#       $NetBSD$
+
+ioconf mlx_pci
+
+include "conf/files"
+include "dev/pci/files.pci"
+
+pseudo-root pci*
+
+mlx* at pci? dev ? function ?

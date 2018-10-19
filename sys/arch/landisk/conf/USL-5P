@@ -1,0 +1,9 @@
+# $NetBSD: USL-5P,v 1.2 2006/09/11 13:54:14 nonaka Exp $
+#
+# USL-5P
+#
+
+include "arch/landisk/conf/GENERIC"
+
+no pciide* at pci?
+no acardide* at pci?

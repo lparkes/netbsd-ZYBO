@@ -1,0 +1,5 @@
+$NetBSD: README,v 1.8 2004/03/29 21:36:45 wiz Exp $
+
+This directory contains a conversion tool from mdoc to html
+for use with groff. It is obsolete since NetBSD defaults to using
+mandoc, and can be removed when groff is removed.

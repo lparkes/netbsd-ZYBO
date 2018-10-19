@@ -1,0 +1,5 @@
+# $NetBSD$
+
+includes:
+clean:
+cleandir:

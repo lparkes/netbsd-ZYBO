@@ -1,0 +1,23 @@
+/*	$NetBSD: kmodule,v 1.1 2009/11/10 14:47:52 skrll Exp $	*/
+
+SECTIONS
+{
+   /* Pre-loaded modules must have merged BSS and data. */
+   .data 0 :
+   {
+     *(.data)
+     *(.bss)
+     *(.bss.*)
+     *(COMMON)
+   }
+   . = ALIGN(64);	/* COHERENCY_UNIT */
+   .data.cacheline_aligned	: { *(.data.cacheline_aligned) }
+   . = ALIGN(64);	/* COHERENCY_UNIT */
+   .data.read_mostly		: { *(.data.read_mostly) }
+   . = ALIGN(64);	/* COHERENCY_UNIT */
+   /* Pre-loaded modules do not need the following. */
+   /DISCARD/ :
+   {
+     *(.comment)
+   }
+}

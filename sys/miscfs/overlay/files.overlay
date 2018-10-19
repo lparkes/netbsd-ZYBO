@@ -1,0 +1,7 @@
+#	$NetBSD$
+
+deffs	OVERLAY
+
+define	overlay: vfs, layerfs
+file	miscfs/overlay/overlay_vfsops.c	overlay
+file	miscfs/overlay/overlay_vnops.c	overlay

@@ -1,0 +1,10 @@
+#       $NetBSD$
+
+ioconf ld_icp
+
+include "conf/files"
+include "dev/pci/files.pci"
+
+pseudo-root icp*
+
+ld* at icp?

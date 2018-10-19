@@ -1,0 +1,10 @@
+#       $NetBSD$
+
+ioconf cac_eisa
+
+include "conf/files"
+include "dev/eisa/files.eisa"
+
+pseudo-root eisa*
+
+cac* at eisa? slot ?

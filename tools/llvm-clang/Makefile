@@ -1,0 +1,20 @@
+#	$NetBSD: Makefile,v 1.1 2011/02/06 01:14:11 joerg Exp $
+
+HOSTPROGNAME=	${MACHINE_GNU_PLATFORM}-clang
+HOSTPROG_CXX=	${MACHINE_GNU_PLATFORM}-clang
+HOST_SRCDIR=	external/bsd/llvm/bin/clang
+
+.include "${.CURDIR}/../Makefile.host"
+
+install.host: ${HOST_BINDIR}/${MACHINE_GNU_PLATFORM}-clang++
+install.host: ${HOST_BINDIR}/${MACHINE_GNU_PLATFORM}-clang-cpp
+
+${HOST_BINDIR}/${MACHINE_GNU_PLATFORM}-clang++:
+	${_MKTARGET_INSTALL}
+	mkdir -p ${HOST_BINDIR}
+	${HOST_INSTALL_SYMLINK} ${HOSTPROGNAME} ${.TARGET}
+
+${HOST_BINDIR}/${MACHINE_GNU_PLATFORM}-clang-cpp:
+	${_MKTARGET_INSTALL}
+	mkdir -p ${HOST_BINDIR}
+	${HOST_INSTALL_SYMLINK} ${HOSTPROGNAME} ${.TARGET}

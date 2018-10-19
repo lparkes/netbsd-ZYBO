@@ -1,0 +1,11 @@
+#	$NetBSD: Makefile.makekeys,v 1.2 2010/11/22 00:52:33 mrg Exp $
+
+DPSRCS+=	ks_tables.h
+CLEANFILES+=	ks_tables.h
+
+KSDEF=	${DESTDIR}${X11INCDIR}/X11/keysymdef.h
+
+ks_tables.h: ${KSDEF}
+	${_MKTARGET_CREATE}
+	rm -f ${.TARGET}
+	${TOOL_MAKEKEYS} ${KSDEF} > ${.TARGET}

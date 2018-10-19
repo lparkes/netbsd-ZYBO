@@ -1,0 +1,9 @@
+#	$NetBSD: files.sunxi,v 1.57 2018/06/01 22:11:54 jmcneill Exp $
+#
+# Configuration info for QEMU virtual boards.
+#
+#
+
+file	arch/arm/virt/virt_platform.c		soc_virt
+
+defflag	opt_soc.h				SOC_VIRT

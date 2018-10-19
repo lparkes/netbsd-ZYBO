@@ -1,0 +1,9 @@
+#	$NetBSD$
+
+deffs	AUTOFS
+defpseudo	autofs
+
+define	autofs: vfs
+file	fs/autofs/autofs.c		autofs
+file	fs/autofs/autofs_vfsops.c	autofs
+file	fs/autofs/autofs_vnops.c	autofs

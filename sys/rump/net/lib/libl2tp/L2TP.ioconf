@@ -1,0 +1,7 @@
+#	$NetBSD$
+
+ioconf		l2tp
+
+include		"conf/files"
+
+pseudo-device   l2tp

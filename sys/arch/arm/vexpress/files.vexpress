@@ -1,0 +1,11 @@
+#	$NetBSD: files.vexpress,v 1.5 2018/03/17 18:34:09 ryo Exp $
+#
+# Configuration info for ARM Ltd. Versatile Express peripherals
+#
+#
+
+file	arch/arm/vexpress/vexpress_platform.c
+
+device	vxsysreg
+attach	vxsysreg at fdt with vexpress_sysreg
+file	arch/arm/vexpress/vexpress_sysreg.c	vexpress_sysreg	

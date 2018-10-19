@@ -1,0 +1,11 @@
+#	$NetBSD: std.mipsco,v 1.8.6.4 2005/11/10 13:57:46 skrll Exp $
+
+machine mipsco mips
+include		"conf/std"	# MI standard options
+makeoptions	MACHINE_ARCH="mipseb"
+
+options 	EXEC_ELF32	# exec ELF32 binaries
+options 	EXEC_SCRIPT	# exec #! scripts
+
+makeoptions	DEFTEXTADDR="0x80021000"
+makeoptions	LINKFORMAT="-N"

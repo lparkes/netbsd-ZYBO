@@ -1,0 +1,4 @@
+#	$NetBSD: NetBSD.dist.sparc64,v 1.9 2014/07/19 18:38:33 lneto Exp $
+
+./usr/include/g++/bits/sparc
+./usr/include/g++/bits/sparc64

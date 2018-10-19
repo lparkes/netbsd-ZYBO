@@ -1,0 +1,9 @@
+#	$NetBSD: majors.evbmips,v 1.28 2013/04/26 18:35:43 christos Exp $
+#
+# MI major assignments for tty(*) devices
+#
+
+device-major	com		char 260		com
+device-major	lpt		char 261		lpt
+device-major	cy		char 262		cy
+device-major	cz		char 263		cz

@@ -1,0 +1,13 @@
+#       $NetBSD: files.hid,v 1.2 2016/01/20 01:26:00 jcs Exp $
+
+# Human Interface Devices
+# Used by USB, bluetooth and i2c
+
+# HID processing
+define  hid
+file    dev/hid/hid.c			hid
+
+define	hidms
+file    dev/hid/hidms.c			hidms
+
+file	dev/hid/hidkbdmap.c		ukbd | btkbd | linux_keymap

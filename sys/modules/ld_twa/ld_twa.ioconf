@@ -1,0 +1,10 @@
+#       $NetBSD$
+
+ioconf ld_twa
+
+include "conf/files"
+include "dev/pci/files.pci"
+
+pseudo-root twa*
+
+ld* at twa?

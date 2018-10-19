@@ -1,0 +1,6 @@
+#	$NetBSD: Makefile,v 1.7 1997/07/20 06:07:26 thorpej Exp $
+#	@(#)Makefile	8.1 (Berkeley) 5/31/93
+
+PROG=	echo
+
+.include <bsd.prog.mk>

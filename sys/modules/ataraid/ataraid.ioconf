@@ -1,0 +1,8 @@
+#       $NetBSD$
+
+ioconf ataraid
+
+include "conf/files"
+include "dev/ata/files.ata"
+
+pseudo-device ataraid

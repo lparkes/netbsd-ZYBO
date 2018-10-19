@@ -1,0 +1,19 @@
+#!/bin/sh
+#
+# $NetBSD$
+#
+
+# PROVIDE: automountd
+# REQUIRE: DAEMON
+# KEYWORD: nojail
+
+. /etc/rc.subr
+
+name="automountd"
+rcvar="autofs"
+pidfile="/var/run/${name}.pid"
+command="/usr/sbin/${name}"
+required_modules="autofs"
+
+load_rc_config $name
+run_rc_command "$1"

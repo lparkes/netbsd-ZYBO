@@ -1,0 +1,9 @@
+#	$NetBSD: files.ofw,v 1.5.90.1 2007/09/24 20:05:17 macallan Exp $
+
+defflag opt_ofwoea.h OFWOEA_DEBUG
+file	arch/powerpc/powerpc/ofw_machdep.c
+file	arch/powerpc/powerpc/ofwmagic.S
+file	arch/powerpc/powerpc/openfirm.c
+
+# Firmworks OpenFirmware Bug Workarounds
+file	arch/powerpc/powerpc/ofwreal.S		firmworksbugs

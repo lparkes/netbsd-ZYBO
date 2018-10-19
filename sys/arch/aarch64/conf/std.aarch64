@@ -1,0 +1,10 @@
+#	$NetBSD: std.aarch64,v 1.2 2015/05/07 19:14:56 mrg Exp $
+#
+# standard NetBSD/aarch64 options
+
+options 	EXEC_ELF64
+options 	EXEC_SCRIPT
+
+options 	AARCH64_EL0_STACK_ALIGNMENT_CHECK
+options 	AARCH64_EL1_STACK_ALIGNMENT_CHECK
+#options 	AARCH64_ALIGNMENT_CHECK

@@ -1,0 +1,7 @@
+# $NetBSD$
+
+include "arch/cobalt/conf/GENERIC"
+
+#ident 		"GENERIC32-$Revision: 1.1 $"
+
+no makeoptions	CPUFLAGS

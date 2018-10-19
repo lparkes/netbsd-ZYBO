@@ -1,0 +1,10 @@
+#       $NetBSD$
+
+ioconf if_vioif
+
+include "conf/files"
+include "dev/pci/files.pci"
+
+pseudo-root virtio*
+
+if_vioif* at virtio?

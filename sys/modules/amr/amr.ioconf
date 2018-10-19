@@ -1,0 +1,10 @@
+#       $NetBSD$
+
+ioconf amr
+
+include "conf/files"
+include "dev/pci/files.pci"
+
+pseudo-root pci*
+
+amr* at pci? dev ? function ?

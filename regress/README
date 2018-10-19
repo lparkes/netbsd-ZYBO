@@ -1,0 +1,6 @@
+	$NetBSD: README,v 1.2 2009/09/14 17:15:32 apb Exp $
+
+New tests must use the ATF framework; see atf(7)
+and the src/tests directory.
+
+All exceptions need prior approval from core.

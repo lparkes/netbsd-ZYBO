@@ -1,0 +1,8 @@
+# $NetBSD: HDL-U,v 1.2 2006/09/11 13:54:14 nonaka Exp $
+#
+# HDL-U/LAN Tank
+#
+
+include "arch/landisk/conf/GENERIC"
+
+no wdc0 at obio?

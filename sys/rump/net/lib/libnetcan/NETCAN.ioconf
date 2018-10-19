@@ -1,0 +1,7 @@
+#	$NetBSD$
+
+ioconf		netcan
+
+include		"conf/files"
+
+pseudo-device   canloop

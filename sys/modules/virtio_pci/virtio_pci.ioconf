@@ -1,0 +1,10 @@
+#       $NetBSD$
+
+ioconf virtio_pci
+
+include "conf/files"
+include "dev/pci/files.pci"
+
+pseudo-root pci*
+
+virtio* at pci? dev ? function ?

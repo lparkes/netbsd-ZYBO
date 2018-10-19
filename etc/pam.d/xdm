@@ -1,0 +1,16 @@
+# $NetBSD: xdm,v 1.3 2005/01/08 08:43:03 christos Exp $
+#
+# PAM configuration for the "xdm" service
+#
+
+# auth
+auth		include		display_manager
+
+# account
+account		include		display_manager
+
+# session
+session		include		display_manager
+
+# password
+password	required	pam_deny.so

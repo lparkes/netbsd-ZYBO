@@ -1,0 +1,8 @@
+#	$NetBSD$
+
+deffs	PTYFS
+
+define	ptyfs: vfs
+file	fs/ptyfs/ptyfs_subr.c	ptyfs
+file	fs/ptyfs/ptyfs_vfsops.c	ptyfs
+file	fs/ptyfs/ptyfs_vnops.c	ptyfs

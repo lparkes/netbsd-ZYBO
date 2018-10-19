@@ -1,0 +1,9 @@
+# $NetBSD: dbcool.ioconf,v 1.1 2011/07/31 16:05:28 jmcneill Exp $
+
+ioconf hythygtemp
+
+include "conf/files"
+
+pseudo-root iic*
+
+hythygtemp* at iic? addr 0x28

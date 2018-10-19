@@ -1,0 +1,8 @@
+#	$NetBSD$
+
+deffs	UNIONFS
+
+define	unionfs: vfs
+file	fs/unionfs/unionfs_subr.c	unionfs
+file	fs/unionfs/unionfs_vfsops.c	unionfs
+file	fs/unionfs/unionfs_vnops.c	unionfs

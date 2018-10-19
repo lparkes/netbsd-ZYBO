@@ -1,0 +1,4 @@
+# $NetBSD: NetBSD.dist.riscv64,v 1.1 2014/09/19 17:36:24 matt Exp $
+
+./usr/include/g++/bits/riscv32
+./usr/include/g++/bits/riscv64

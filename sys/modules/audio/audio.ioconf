@@ -1,0 +1,9 @@
+#	$NetBSD: auvitek.ioconf,v 1.1 2010/12/27 15:43:41 jmcneill Exp $
+
+ioconf audio
+
+include "conf/files"
+
+pseudo-root audiobus*
+
+audio* at audiobus?

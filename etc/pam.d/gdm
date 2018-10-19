@@ -1,0 +1,13 @@
+# $NetBSD: gdm,v 1.3 2005/01/08 08:43:03 christos Exp $
+#
+# PAM configuration for the "gdm" service
+#
+
+# auth
+auth		include		display_manager
+
+# account
+account		include		display_manager
+
+# session
+session		include		display_manager

@@ -1,0 +1,3 @@
+.\"	$NetBSD: install,v 1.5 2002/05/03 05:21:39 mbw Exp $
+.
+.so ../common/netboot

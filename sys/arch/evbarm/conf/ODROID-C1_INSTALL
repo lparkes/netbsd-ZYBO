@@ -1,0 +1,10 @@
+#	$NetBSD: ODROID-C1_INSTALL,v 1.3 2014/10/14 17:48:24 htodd Exp $
+#
+#       ODROID-C1_INSTALL -- Hardkernel ODROID-C1 kernel with
+#	installation-sized ramdisk
+#
+
+include "arch/evbarm/conf/ODROID-C1"
+include "arch/evbarm/conf/INSTALL"
+
+options 	BOOTHOWTO=RB_SINGLE

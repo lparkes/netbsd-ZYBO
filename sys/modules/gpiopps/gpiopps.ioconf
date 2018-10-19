@@ -1,0 +1,8 @@
+#	$NetBSD$
+
+ioconf		gpiopps
+
+include		"conf/files"
+
+pseudo-root	gpio*
+gpiopps*	at gpio? offset ? mask ? flag ?

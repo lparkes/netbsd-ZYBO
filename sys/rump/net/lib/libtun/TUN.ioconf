@@ -1,0 +1,7 @@
+#	$NetBSD$
+
+ioconf		tun
+
+include		"conf/files"
+
+pseudo-device   tun

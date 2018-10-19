@@ -1,0 +1,8 @@
+#	$NetBSD$
+
+ioconf		gpioirq
+
+include		"conf/files"
+
+pseudo-root	gpio*
+gpioirq*	at gpio? offset ? mask ? flag ?
